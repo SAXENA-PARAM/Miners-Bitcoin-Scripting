@@ -1,0 +1,74 @@
+ 
+Ensuring wallet is loaded...
+Wallet 'mywallet' is already loaded.
+Mining a block to confirm the A-to-B transaction...
+Listing unspent outputs for Address B...
+Found UTXO: {'txid': '1debec1503fd9923aaa2eda825d9062a7d439b285a20d6aa63ae18ab393e3b96', 'vout': 0, 'address': 'mmZLETCXugXivJk4B8ZMCEoX9FUFwHhfQz',
+ 'label': 'Address B', 'scriptPubKey': '76a9144243e6437c5cbee99814cea6f22f6c6b52b0cefa88ac', 'amount': Decimal('1.00000000'), 'confirmations': 1, 'spendable': True,
+  'solvable': True, 'desc': 'pkh([c4747db2/44h/1h/0h/0/7]03cc8e58e4ae5018021b983c8b4dcb3ae7c23bc6adc671f210d30af18478f9bb86)#94dwh6fl',
+ 'parent_descs': ['pkh(tpubD6NzVbkrYhZ4X6yHaYXERh3VPUmwwQKpwZKemAJhkGbHr8NzHrdrdf65BxhKSuuzeDmBYXFRvhCaVCHFPHTg7D9dxyNELDErn7f7apC9E2V/44h/1h/0h/0/*)#scg6nxg8'],
+  'safe': True}
+Creating raw transaction from B to C...
+Raw transaction: 0200000001963b3e39ab18ae63aad6205a289b437d2a06d925a8eda2aa2399fd0315eceb1d0000000000fdffffff0280f0fa02000000001976a9141b0dd61f6e9a1929cff7c91333afc03e17f308
+da88ac70c9fa02000000001976a9144243e6437c5cbee99814cea6f22f6c6b52b0cefa88ac00000000
+Signing the transaction...
+Signed transaction: 0200000001963b3e39ab18ae63aad6205a289b437d2a06d925a8eda2aa2399fd0315eceb1d000000006a47304402206b5dac1ff943445b10f11c6b6755126e99cbfca68c571359cd8aba6b3f8
+c5f49022071426e5413896a190bc86f3be0821316f1006da7c4eccfb655acb03d38a2d58e012103cc8e58e4ae5018021b983c8b4dcb3ae7c23bc6adc671f210d30af18478f9bb86fdffffff0280f0fa02000000001976
+a9141b0dd61f6e9a1929cff7c91333afc03e17f308da88ac70c9fa02000000001976a9144243e6437c5cbee99814cea6f22f6c6b52b0cefa88ac00000000
+Broadcasting the transaction...
+Transaction B to C broadcasted, txid: d327950aeff12dd6f40b186318e317c8c43eb778b6f2471096c67ae5bfb99021
+Decoding the transaction...
+Decoded transaction:
+{
+  "txid": "d327950aeff12dd6f40b186318e317c8c43eb778b6f2471096c67ae5bfb99021",
+  "hash": "d327950aeff12dd6f40b186318e317c8c43eb778b6f2471096c67ae5bfb99021",
+  "version": 2,
+  "size": 225,
+  "vsize": 225,
+  "weight": 900,
+  "locktime": 0,
+  "vin": [
+    {
+      "txid": "1debec1503fd9923aaa2eda825d9062a7d439b285a20d6aa63ae18ab393e3b96",
+      "vout": 0,
+      "scriptSig": {
+        "asm": "304402206b5dac1ff943445b10f11c6b6755126e99cbfca68c571359cd8aba6b3f8c5f49022071426e5413896a190bc86f3be0821316f1006da7c4eccfb655acb03d38a2d58e[ALL] 03cc8e58e4a
+        e5018021b983c8b4dcb3ae7c23bc6adc671f210d30af18478f9bb86",  
+        "hex": "47304402206b5dac1ff943445b10f11c6b6755126e99cbfca68c571359cd8aba6b3f8c5f49022071426e5413896a190bc86f3be0821316f1006da7c4eccfb655acb03d38a2d58e012103cc8e58e4a
+        e5018021b983c8b4dcb3ae7c23bc6adc671f210d30af18478f9bb86"   
+      },
+      "sequence": 4294967293
+    }
+  ],
+  "vout": [
+    {
+      "value": 0.5,
+      "n": 0,
+      "scriptPubKey": {
+        "asm": "OP_DUP OP_HASH160 1b0dd61f6e9a1929cff7c91333afc03e17f308da OP_EQUALVERIFY OP_CHECKSIG",
+        "desc": "addr(mhz17c1z5RQU3k3dn4TBixyEhpoo7oV2qQ)#ptxmcr3z",
+        "hex": "76a9141b0dd61f6e9a1929cff7c91333afc03e17f308da88ac",
+        "address": "mhz17c1z5RQU3k3dn4TBixyEhpoo7oV2qQ",
+        "type": "pubkeyhash"
+      }
+    },
+    {
+      "value": 0.4999,
+      "n": 1,
+      "scriptPubKey": {
+        "asm": "OP_DUP OP_HASH160 4243e6437c5cbee99814cea6f22f6c6b52b0cefa OP_EQUALVERIFY OP_CHECKSIG",
+        "desc": "addr(mmZLETCXugXivJk4B8ZMCEoX9FUFwHhfQz)#frft054q",
+        "hex": "76a9144243e6437c5cbee99814cea6f22f6c6b52b0cefa88ac",
+        "address": "mmZLETCXugXivJk4B8ZMCEoX9FUFwHhfQz",
+        "type": "pubkeyhash"
+      }
+    }
+  ]
+}
+Unlocking script (scriptSig) for Address B: 47304402206b5dac1ff943445b10f11c6b6755126e99cbfca68c571359cd8aba6b3f8c5f49022071426e5413896a190bc86f3be0821316f1006da7c4eccfb655a
+cb03d38a2d58e012103cc8e58e4ae5018021b983c8b4dcb3ae7c23bc6adc671f210d30af18478f9bb86
+
+Comparing scripts...
+Challenge script (scriptPubKey from A-to-B): None
+Response script (scriptSig from B-to-C): 47304402206b5dac1ff943445b10f11c6b6755126e99cbfca68c571359cd8aba6b3f8c5f49022071426e5413896a190bc86f3be0821316f1006da7c4eccfb655acb0
+3d38a2d58e012103cc8e58e4ae5018021b983c8b4dcb3ae7c23bc6adc671f210d30af18478f9bb86
